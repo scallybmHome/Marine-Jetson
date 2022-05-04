@@ -54,11 +54,11 @@ Install the Node Server using npm
 
 ## Step 3 - your own setup and running automatically as daemon
 
-To generate your own vessel settings file and configure your Pi to start the server automatically , type...
+To generate your own vessel settings file and configure your Jetson to start the server automatically , type...
 
     $ sudo signalk-server-setup
 
-and follow the prompts. If you are following the defaults and are logged on as ”pi” the boat info will be stored in `/home/pi/.signalk/defaults.json` and the settings in `/home/pi/.signalk/settings.json`
+and follow the prompts. If you are following the defaults and are logged on as [user] the boat info will be stored in `/home/[user].signalk/defaults.json` and the settings in `/home/[user]/.signalk/settings.json`
 
 You can re-run this command at any time in the future to change the settings.
 
@@ -86,7 +86,7 @@ Check status with;
     $ sudo systemctl status signalk.service
     $ sudo systemctl status signalk.socket
 
-**In addition the setup script will enable security by default.** At the admin UI you have to use ”Login” in the upper right corner and create a account, for example 'admin' and 'password', and then logon. Security information is stored in `/home/pi/.signalk/security.json`.
+**In addition the setup script will enable security by default.** At the admin UI you have to use ”Login” in the upper right corner and create a account, for example 'admin' and 'password', and then logon. Security information is stored in `/home/[user]/.signalk/security.json`.
 
 ![enable_security](https://user-images.githubusercontent.com/16189982/43796658-279e7c40-9a85-11e8-98d4-a90f1e9904d1.jpeg)
 
